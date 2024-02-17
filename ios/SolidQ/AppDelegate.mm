@@ -1,11 +1,12 @@
 #import "AppDelegate.h"
-
+#import <GoogleMaps/GoogleMaps.h>
 #import <React/RCTBundleURLProvider.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [GMSServices provideAPIKey:@"AIzaSyDLGElbUmrLsqO_VdCw1Vi4s8vABrx9l7k "];
   self.moduleName = @"SolidQ";
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
